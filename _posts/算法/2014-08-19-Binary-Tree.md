@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 二叉树(binary tree)笔记
+category: 算法
 description: 二叉树
 tags: ["C++","算法","数据结构"]
 ---
