@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 动态规划(Dynamic Programming)笔记
+title: 动态规划(Dynamic Programming)
 category: 算法
 description: 动态规划
 tags: ["C++","算法","数据结构"]
