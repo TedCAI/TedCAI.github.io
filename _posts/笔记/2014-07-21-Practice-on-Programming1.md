@@ -6,6 +6,8 @@ description: Practice on Programming笔记
 tags: ["C++"]
 ---
 
+### 函数指针和命令行参数(看了但是没做笔记,mark一下)
+
 ### 位运算
 
 1. 单/双目运算符：
