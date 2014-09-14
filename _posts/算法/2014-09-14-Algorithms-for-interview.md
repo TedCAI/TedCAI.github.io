@@ -47,50 +47,27 @@ ref:http://leetcode.com/2010/09/saving-binary-search-tree-to-file.html
 ### Reconstruct a Binary Tree given the preorder and inorder traversal orders
 
 ```
-struct BinaryTree 
-{
-    int data;
-    BinaryTree* left;
-    BinaryTree* right;
-};
- 
-BinaryTree* newTreeNode(int data)
-{
-    BinaryTree* newNode = new BinaryTree;
-    newNode->data = data;
-    newNode->left = NULL;
-    newNode->right = NULL;
- 
-    return newNode;
+const int MAX = 256;
+// a fast lookup for inorder's element -> index
+// binary tree's element must be in the range of [0, MAX-1]
+int mapIndex[MAX];
+void mapToIndices(int inorder[], int n) {
+  for (int i = 0; i < n; i++) {
+    assert(0 <= inorder[i] && inorder[i] <= MAX-1);
+    mapIndex[inorder[i]] = i;
+  }
 }
  
-int getIndex(int* arr, int val, int size)
-{
-    for(int i=0; i<size;i++) {
-        if(arr[i] == val) 
-            return i;
-    }
-    return -1;
-}
-  
-BinaryTree* create_bintree(int* parray, int* iarray, int size)
-{
-    if(size == 0) return NULL;
- 
-    int rootVal = parray[0];
-    BinaryTree* root  = newTreeNode(rootVal);
-    int newIdx = getIndex(iarray, rootVal, size);
-    root->left = create_bintree(parray+1, iarray, newIdx);
-    root->right = create_bintree(parray+newIdx+1, iarray+newIdx+1, size-newIdx-1);
-    return root;            
-}
-
-void main()
-{
-    int preorder[] = {7,10,4,3,1,2,8,11};
-    int inorder[] = {4,10,3,1,7,11,8,2};
- 
-    BinaryTree* tree = create_bintree(preorder, inorder, 8);
+// precondition: mapToIndices must be called before entry
+Node *buildInorderPreorder(int in[], int pre[], int n, int offset) {
+  assert(n >= 0);
+  if (n == 0) return NULL;
+  int rootVal = pre[0];
+  int i = mapIndex[rootVal]-offset;  // the divider's index
+  Node *root = new Node(rootVal);
+  root->left = buildInorderPreorder(in, pre+1, i, offset);
+  root->right = buildInorderPreorder(in+i+1, pre+i+1, n-i-1, offset+i+1);
+  return root;
 }
 ```
 
