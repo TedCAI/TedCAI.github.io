@@ -58,13 +58,15 @@ void mapToIndices(int inorder[], int n) {
 }
  
 // precondition: mapToIndices must be called before entry
-Node *buildInorderPreorder(int in[], int pre[], int size_n, int offset) {
-  if (size_n == 0) return NULL;
+Node *buildInorderPreorder(int in[], int pre[], int size, int offset) {
+  if (size == 0) return NULL;
+  
   int rootVal = pre[0];
-  int i = mapIndex[rootVal]-offset;  // the divider's index
   Node *root = new Node(rootVal);
+  
+  int i = mapIndex[rootVal]-offset;  // the divider's index
   root->left = buildInorderPreorder(in, pre+1, i, offset);
-  root->right = buildInorderPreorder(in+i+1, pre+i+1, size_n-i-1, offset+i+1);
+  root->right = buildInorderPreorder(in+i+1, pre+i+1, size-i-1, offset+i+1);
   return root;
 }
 ```
