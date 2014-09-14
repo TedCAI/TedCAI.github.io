@@ -53,14 +53,12 @@ const int MAX = 256;
 int mapIndex[MAX];
 void mapToIndices(int inorder[], int n) {
   for (int i = 0; i < n; i++) {
-    assert(0 <= inorder[i] && inorder[i] <= MAX-1);
     mapIndex[inorder[i]] = i;
   }
 }
  
 // precondition: mapToIndices must be called before entry
 Node *buildInorderPreorder(int in[], int pre[], int size_n, int offset) {
-  assert(size_n >= 0);
   if (size_n == 0) return NULL;
   int rootVal = pre[0];
   int i = mapIndex[rootVal]-offset;  // the divider's index
