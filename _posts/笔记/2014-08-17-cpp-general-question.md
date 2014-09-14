@@ -232,4 +232,15 @@ Function in subclass has same name, same parameters or signature, and same retur
 ### 23. C++ STL vector, valarray, 和bitSet使用方法对比
 
 ### 24. 抽象类(abstract type)
-不能被直接实例化instantiated 
+不能被直接实例化instantiated
+
+### 25. const的问题
+Declares 2 ints which are constant:
+int const x1 = 3;
+const int x2 = 3;
+
+Declares a pointer whose data cannot be changed through the pointer:
+const int *p = &someInt;
+
+Declares a pointer who cannot be changed to point to something else:
+int * const p = &someInt;

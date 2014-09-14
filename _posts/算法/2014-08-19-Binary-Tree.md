@@ -141,7 +141,7 @@ template <typename T> BinNodePosi(T)
 BinTree<T>::insertAsRC(BinNodePosi(T) x, T const & e){
 	_size++; 
 	x->insertAsRC(e);
-	updateHeightAboce(x);	//x祖先的高度可能增加, 其余节点必然不变
+	updateHeightAbove(x);	//x祖先的高度可能增加, 其余节点必然不变
 	return x->rChild;
 }
 ```
