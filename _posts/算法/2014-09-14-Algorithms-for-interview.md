@@ -64,9 +64,9 @@ Node *buildInorderPreorder(int in[], int pre[], int size, int offset) {
   int rootVal = pre[0];
   Node *root = new Node(rootVal);
   
-  int i = mapIndex[rootVal]-offset;  // the divider's index
-  root->left = buildInorderPreorder(in, pre+1, i, offset);
-  root->right = buildInorderPreorder(in+i+1, pre+i+1, size-i-1, offset+i+1);
+  int lTree_size = mapIndex[rootVal]-offset;  // the divider's index
+  root->left = buildInorderPreorder(in, pre+1, lTree_size, offset);
+  root->right = buildInorderPreorder(in+lTree_size+1, pre+lTree_size+1, size-lTree_size-1, offset+lTree_size+1);
   return root;
 }
 ```
