@@ -240,7 +240,7 @@ id = 1 Destructed //先被构造的对象最后被析构
 ```
  
 
-###静态成员变量(Static Variable)和静态成员函数(static member function)
+### 静态成员变量(Static Variable)和静态成员函数(static member function)
 1.静态成员：加static关键字 
 
 ```

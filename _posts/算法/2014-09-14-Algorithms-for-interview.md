@@ -41,6 +41,36 @@ ref:http://www.codeproject.com/Articles/27742/How-To-Reverse-a-Linked-List-Diffe
 
 ### Serialization/Deserialization of a Binary Tree 
 
+```
+/*Serialization*/
+
+void writeBinaryTree(BinaryTree *p, ostream &out) {
+  if (!p) {
+    out << "# ";
+  } else {
+    out << p->data << " ";
+    writeBinaryTree(p->left, out);
+    writeBinaryTree(p->right, out);
+  }
+}
+```
+
+```
+/*Deserialization*/
+
+void readBinaryTree(BinaryTree *p, ifstream &fin) {
+  int token;
+  bool isNumber;
+  if (!readNextToken(token, fin, isNumber)) 
+    return;
+  if (isNumber) {
+    p = new BinaryTree(token);
+    readBinaryTree(p->left, fin);
+    readBinaryTree(p->right, fin);
+  }
+}
+```
+
 ref:http://leetcode.com/2010/09/serializationdeserialization-of-binary.html
 ref:http://leetcode.com/2010/09/saving-binary-search-tree-to-file.html
 
@@ -58,7 +88,7 @@ void mapToIndices(int inorder[], int n) {
 }
  
 // precondition: mapToIndices must be called before entry
-Node *buildInorderPreorder(int in[], int pre[], int size, int offset) {
+Node * buildInorderPreorder(int in[], int pre[], int size, int offset) {
   if (size == 0) return NULL;
   
   int rootVal = pre[0];
