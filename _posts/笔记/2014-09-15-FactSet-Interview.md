@@ -9,7 +9,7 @@ tags: ["C++","算法","数据结构"]
 从Interview里也能学到一些新思想嗯
 
 ### 面试前的准备
-1. GlassDoor查了一些FactSet的面经,可能会问到的问题有
+1.GlassDoor查了一些FactSet的面经,可能会问到的问题有
 (1)code review (triangle class)
 
 (2)design a game (chess game or tennis), 主要考察系统设计和OO的思想
