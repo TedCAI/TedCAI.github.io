@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 图(graph)
+title: 排序算法总结
 category: 算法
 description: 图
 tags: ["C++","算法","数据结构"]
