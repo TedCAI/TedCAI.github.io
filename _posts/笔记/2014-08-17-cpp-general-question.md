@@ -244,3 +244,6 @@ const int *p = &someInt;
 
 Declares a pointer who cannot be changed to point to something else:
 int * const p = &someInt;
+
+### 26. 进程与线程
+http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
