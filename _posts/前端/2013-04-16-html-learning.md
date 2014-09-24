@@ -103,7 +103,8 @@ HTML里“”中间再加”“不可用，需要加‘’才行？
 	  
 ### jquery清空所有input文本框： $('.input').val("");
 
-### button表单提交：<button class="e-btn e-icon" name="LOGIN" type="submit"><span><i class="e-icon e-history e-next"></i></span></button>
+### button表单提交：
+<button class="e-btn e-icon" name="LOGIN" type="submit"><span><i class="e-icon e-history e-next"></i></span></button>
 
 ### IE7无法获得cookie，firefox和chrome没问题
 IE 与FireFox 对Cookie时间的不同理解：
@@ -114,9 +115,7 @@ IE 与FireFox 对Cookie时间的不同理解：
  
 ### IE cookie 失效情况总结
 
-以前做过的一个应用，因为需要所以改变成跨域的需求。调试完毕之后再火狐下面提交一切ok，但是后来发现在ie下面竟然cookie是失效的
-
-搜索了一些资料。总结了cookie失效的一些原因
+以前做过的一个应用，因为需要所以改变成跨域的需求。调试完毕之后再火狐下面提交一切ok，但是后来发现在ie下面竟然cookie是失效的,搜索了一些资料。总结了cookie失效的一些原因
 
 1:
 开始以为是时区的问题，因为在火狐下面的cookie失效机制和ie不一样，火狐是看服务器的时间-服务器建立时间~~ ie呢是客户端时间-服务器建立cookie时间
@@ -136,6 +135,7 @@ IE 与FireFox 对Cookie时间的不同理解：
 ```
 <td width="200px">File path</td>
 
+
 <td  width="170px">
 
 <span class="e-input"  style="width:170px;">
@@ -146,6 +146,7 @@ IE 与FireFox 对Cookie时间的不同理解：
 
 </td>
 
+
 <td  width="70px">
 
 <button class="e-btn" onclick="document.getElementById_x_x('SWDL_FilePath').click()">
@@ -155,6 +156,7 @@ IE 与FireFox 对Cookie时间的不同理解：
 </button>
 
 </td>
+
 
 <td>
 
@@ -167,11 +169,6 @@ onchange="document.getElementById_x_x('browse_textfield').value=this.value"  sty
 <iframe id="SWDL_Frame" name="SWDL_Frame" style="display:none"></iframe>
 
 ```
-
- 
-
- 
-
 
 ### ajax timeout例子的理解：是不是说只要timeout了数据没post成功就执行error函数？
 

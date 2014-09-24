@@ -23,6 +23,8 @@ http://developer.51cto.com/art/201007/213710.htm
 http://blog.sina.com.cn/s/blog_4fcdb9280100l46v.html
 perl学习笔记1---local与my用法
       在函数定义中，使用my关键字来确保用户定义函数中所使用的变量名不与任何其它同名的全局变量冲突，它使其后面的变量成为通常语言所谓的local变量。缺省情况下，perl函数中的变量是全局变量。 local变量先save再store
+	  
+```
 $x = 9;
 sub mm{
     print "$x\n";
@@ -40,6 +42,8 @@ sub gg_local {
 gg_my;
 gg_local;
 print $x;
+```
+
 输出结果是：
 call_my 11
 9
