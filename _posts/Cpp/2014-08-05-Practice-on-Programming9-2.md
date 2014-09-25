@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practice on Programming笔记（第九周:STL3）
-category: C++
+category: Cpp
 description: 容器适配器和STL算法
 tags: ["C++"]
 ---

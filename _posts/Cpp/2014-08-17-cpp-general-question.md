@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C++一般向问题汇总
-category: C++
+category: Cpp
 description: C++一般向问题汇总
 tags: ["C++"]
 ---

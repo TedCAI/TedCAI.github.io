@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practice on Programming笔记（第六周：多态与虚函数）
-category: C++
+category: Cpp
 description: 多态与虚函数
 tags: ["C++"]
 ---

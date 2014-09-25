@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practice on Programming笔记（第八周:STL）
-category: C++
+category: Cpp
 description: STL
 tags: ["C++"]
 ---

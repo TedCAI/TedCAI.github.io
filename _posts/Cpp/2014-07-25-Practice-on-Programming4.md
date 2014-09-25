@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practice on Programming笔记（第四周：运算符重载）
-category: C++
+category: Cpp
 description: 运算符重载
 tags: ["C++"]
 ---

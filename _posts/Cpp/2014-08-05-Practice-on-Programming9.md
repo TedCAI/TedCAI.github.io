@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practice on Programming笔记（第九周:STL2）
-category: C++
+category: Cpp
 description: STL2
 tags: ["C++"]
 ---

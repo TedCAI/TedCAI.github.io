@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practice on Programming笔记（第一周:从C到C++）
-category: c++
+category: Cpp
 description: Practice on Programming笔记
 tags: ["C++"]
 ---

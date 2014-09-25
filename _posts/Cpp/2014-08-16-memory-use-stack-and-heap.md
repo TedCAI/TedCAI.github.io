@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C++内存管理,堆栈溢出问题总结
-category: C++
+category: Cpp
 description: C++内存管理,堆栈溢出问题总结
 tags: ["C++"]
 ---

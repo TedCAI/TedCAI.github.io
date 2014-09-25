@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practice on Programming笔记（第五周：继承与派生）
-category: C++
+category: Cpp
 description: 继承与派生
 tags: ["C++"]
 ---
