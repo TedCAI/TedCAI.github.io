@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C++ STL 容器预分配空间的笔记
-category: 笔记
+category: C++
 description: C++ STL 容器预分配空间的笔记
 tags: ["C++"]
 ---

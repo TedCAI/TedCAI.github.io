@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practice on Programming笔记（第七周：模板,string类）
-category: 笔记
+category: C++
 description: 函数模板和类模板
 tags: ["C++"]
 ---

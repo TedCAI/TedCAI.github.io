@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practice on Programming笔记（第十一/二周:枚举/递归）
-category: 笔记
+category: C++
 description: 枚举和递归
 tags: ["C++","算法"]
 ---

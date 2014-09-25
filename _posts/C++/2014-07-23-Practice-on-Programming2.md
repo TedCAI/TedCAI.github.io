@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practice on Programming笔记（第二周:类和对象初探）
-category: 笔记
+category: C++
 description: Practice on Programming笔记
 tags: ["C++"]
 ---
