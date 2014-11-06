@@ -256,4 +256,4 @@ int *ptr;
 ```
 
 what's wrong?
-Thepointer is not intialised and the program will crash
+The pointer is not intialised and the program will crash
