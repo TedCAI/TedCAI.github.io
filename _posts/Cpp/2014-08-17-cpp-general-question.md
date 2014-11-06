@@ -247,3 +247,13 @@ int * const p = &someInt;
 
 ### 26. 进程与线程
 http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
+
+### 27. 指针的问题
+
+```
+int *ptr;
+*ptr = 7;
+```
+
+what's wrong?
+Thepointer is not intialised and the program will crash
