@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Ruby+Postgresql notes
-category: Ruby+Postgresql
+category: Ruby&Postgresql
 description: ruby+postgresql notes
-tags: ["ruby+postgresql"]
+tags: ["ruby","postgresql"]
 ---
 
 to create model in rails;
