@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ruby+Postgresql notes
-category: ruby+postgresql
+category: Ruby+Postgresql
 description: ruby+postgresql notes
 tags: ["ruby+postgresql"]
 ---
