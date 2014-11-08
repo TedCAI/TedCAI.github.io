@@ -6,16 +6,16 @@ redcarpet:
 
 # 作者信息
 author: 
-  name: Mincong
-  email: mincong.zhang@hotmail.com
-  link: http://mincongzhang.github.io/
-  weibo: http://weibo.com/necroziz
-  github: http://github.com/mincongzhang
+  name: TedCAI
+  email: ted.xmdgj@gmail.com
+  link: http://TedCAI.github.io/
+  #weibo: http://weibo.com/necroziz
+  github: http://github.com/TedCAI
 
 # 站点信息
 title: Mincong的博客 
 description: no  description
-url: http://mincongzhang.github.io/
+url: http://TedCAI.github.io/
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
