@@ -25,11 +25,11 @@ favicon: /public/upload/avatar/favicon.ico
 # google analytics 设置
 ga:
   id: UA-44312631-1
-  url: mincongzhang.github.io/
+  url: TedCAI.github.io/
 
 # disqus 设置
 disqus:
-  shortname: mincong
+  shortname: TedCAI
 
 # 主题设置，自动激活某个标签
 active: 笔记
