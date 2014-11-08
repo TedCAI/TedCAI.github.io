@@ -1,6 +1,6 @@
 ### 我的博客
 
-[http://mincongzhang.github.io/](http://mincongzhang.github.io/)
+[http://TedCAI.github.io/](http://TedCAI.github.io/)
 
 ### 安装说明
 
