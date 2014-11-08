@@ -6,7 +6,7 @@ description: ruby+postgresql notes
 tags: ["ruby","postgresql"]
 ---
 
-to create model in rails;
+To create model in rails;
 
 rails g scaffold ModelName field:integer field2:string field3:
 
@@ -30,8 +30,17 @@ copy zephyr_entity_bases(zephus_id,bvd_id,"name") from '/home/alan/bvddata/entit
 ```
 
 
-to create new copy of file without top row
+To create new copy of file without top row
 
 ```
 $ tail -n +2 filename.txt > newfilename.txt
 ```
+
+Backup postgresql database
+
+```
+sudo pg_dump -F c -v -U postgres -h localhost dealglobe.engine-production -f /data/backup201411041242.psql
+
+sudo pg_dump -F c -v -U ubuntu -h localhost engine_from_prod -f /home/ubuntu/migrate/backup201411041458.psql
+```
+
