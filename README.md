@@ -13,4 +13,7 @@
 
 ### 说明
 
+2014年11月8日之前的博文都是我的朋友张敏骢写的
+他的博客[http://mincongzhang.github.io/](http://mincongzhang.github.io/)
+
 模板来源于[yansu.org](http://yansu.org/)。
