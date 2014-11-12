@@ -44,3 +44,51 @@ sudo pg_dump -F c -v -U postgres -h localhost dealglobe.engine-production -f /da
 sudo pg_dump -F c -v -U ubuntu -h localhost engine_from_prod -f /home/ubuntu/migrate/backup201411041458.psql
 ```
 
+If we have two tables, table a,
+
+columnname | value | date
+-----------|-------|------
+cc | 14 | 2014-01-01
+dd | 15 | 2014-01-01
+ee | 90 | 2014-01-01
+
+table b,
+
+name | score
+-----|-------
+cc | 100 
+dd | 99
+ee | 60
+
+and we using the following commend
+
+```
+SELECT * FROM a INNER JOIN b ON (a.columnname = b.name);
+```
+
+We will have the result table like
+
+columnname | value | date | score
+-----------|-------|------|------
+cc | 14 | 2014-01-01 | 100
+dd | 15 | 2014-01-01 | 99
+ee | 90 | 2014-01-01 | 60
+
+If we want to get the result above in Ruby, the commend could be
+
+```
+A.joins(:b)
+```
+
+Also, we can run
+
+```
+A.joins(:b).group("date").count
+```
+
+In this case, we can get the result group by the column named date. Result should look like:
+
+date | count
+-----|------
+2014-01-01 | 3
+
