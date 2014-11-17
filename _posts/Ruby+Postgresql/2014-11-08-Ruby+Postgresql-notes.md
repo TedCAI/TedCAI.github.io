@@ -92,3 +92,16 @@ date | count
 -----|------
 2014-01-01 | 3
 
+	/////////////
+	/// DevIL ///
+	/////////////
+	
+	Follow the same instructions as above for unzipping and getting to the right directory, then type:
+	$ ./configure --enable-ILU --with-nvtt=no
+	$ make
+	$ sudo make install
+	
+If, while running VTFnix after compilation, you get the error:
+	./VTFnix: error while loading shared libraries: libIL.so.1: cannot open shared object file: No such file or directory
+	
+First, make sure /usr/local/lib is listed in the file /etc/ld.so.conf (or one of it's includes), then run sudo /sbin/ldconfig
