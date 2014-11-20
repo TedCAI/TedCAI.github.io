@@ -14,4 +14,4 @@ http://www.imagemagick.org/discourse-server/viewtopic.php?t=23046
 
 This thread pointed out ImageMagick has developed a number of image scaling functions, such as SuperEagle, Super2xSaI, Hqx, xBR, etc.
 
-![mario.png](https://github.com/TedCAI/TedCAI.github.io/blob/master/public/upload/mario.PNG)
+![mario.png](/public/upload/mario.PNG)
