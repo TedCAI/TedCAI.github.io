@@ -105,3 +105,13 @@ If, while running VTFnix after compilation, you get the error:
 	./VTFnix: error while loading shared libraries: libIL.so.1: cannot open shared object file: No such file or directory
 	
 First, make sure /usr/local/lib is listed in the file /etc/ld.so.conf (or one of it's includes), then run sudo /sbin/ldconfig
+
+## Mount disk
+
+For aggregation01, should run
+
+```
+sudo mount /dev/xvdb /var
+```
+
+to mount the large disk
