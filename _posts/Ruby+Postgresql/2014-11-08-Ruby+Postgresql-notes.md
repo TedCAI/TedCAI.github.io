@@ -115,3 +115,21 @@ sudo mount /dev/xvdb /var
 ```
 
 to mount the large disk
+
+## Usage of phaseapp
+
+-- FROM  phraseapp
+
+1. Login on phraseapp https://phraseapp.com/en/account/login
+
+2. Modify data
+
+3. Run command for update localization on staging (from project path) RAILS_ENV=production bundle exec rake phraseapp:pull
+
+-- FROM files
+
+1. Modify data
+
+2. Run command for push changes on phraseapp: RAILS_ENV=production bundle exec rake phraseapp:push
+
+3. Run command for cleck cache: RAILS_ENV=production bundle exec rake tmp:clear
