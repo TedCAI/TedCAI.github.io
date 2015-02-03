@@ -133,3 +133,8 @@ to mount the large disk
 2. Run command for push changes on phraseapp: RAILS_ENV=production bundle exec rake phraseapp:push
 
 3. Run command for cleck cache: RAILS_ENV=production bundle exec rake tmp:clear
+
+## Sending message manually based on console
+
+Use DealAccessConnectionMessage.created_message!(:sender, :receiver, :body)
+
